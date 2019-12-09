@@ -29,12 +29,12 @@
 
   .main-chat__message-form
     .main-chat__message-form__new-message
-      %form{:action => "/", :method => "post", class:'main-chat__message-form__new-message--form'}
-        %input{:name => "text", :size => "100", placeholder: 'type a message',class:'main-chat__message-form__new-message--field'}
+      %form{action:"/", method:"post", class:'main-chat__message-form__new-message--form'}
+        %input{name:"text", size:"100", placeholder: 'type a message',class:'main-chat__message-form__new-message--field'}
           %label{class: "main-chat__message-form__new-message--label"}
             %i.far.fa-image
-            %input{:name => "file", :type => "file",class:'main-chat__message-form__new-message--file'}
+            %input{name:"file", type:"file",class:'main-chat__message-form__new-message--file'}
 
-    %input{:type => "submit", :value => "Send", class:'main-chat__message-form__new-message--submit'}
+    %input{type:"submit", value:"Send", class:'main-chat__message-form__new-message--submit'}
     -# .main-chat__message-form__new-message__send
     -#   Send
