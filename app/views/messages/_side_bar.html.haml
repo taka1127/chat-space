@@ -3,12 +3,12 @@
     .side-bar__outside-box__inside-box
       .side-bar__outside-box__inside-box__item
         .side-bar__outside-box__inside-box__item__user-name
-          user-name
+          = current_user.name
         .side-bar__outside-box__inside-box__item__icons
           = link_to "#", class: "side-bar__outside-box__inside-box__item__icons--edit" do
             = icon('fas', 'edit', class:'item__icons--edit')
             %span<>
-          = link_to "#", class: "side-bar__outside-box__inside-box__item__icons--cog" do
+          = link_to edit_user_path(current_user), class: "side-bar__outside-box__inside-box__item__icons--cog" do
             = icon('fas', 'cog', class:'item__icons--cog')
             %span<>
               
