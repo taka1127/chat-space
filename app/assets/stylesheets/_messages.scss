@@ -59,6 +59,10 @@
       &__name{
         margin-bottom : 5px ;
         font-size: 15px;
+        &--list{
+          color: #ffffff;
+          text-decoration: none;
+        }
       }
       &__latest-message{
         font-size: 11px;

@@ -5,7 +5,7 @@
         .side-bar__outside-box__inside-box__item__user-name
           = current_user.name
         .side-bar__outside-box__inside-box__item__icons
-          = link_to "#", class: "side-bar__outside-box__inside-box__item__icons--edit" do
+          = link_to new_group_path, class: "side-bar__outside-box__inside-box__item__icons--edit" do
             = icon('fas', 'edit', class:'item__icons--edit')
             %span<>
           = link_to edit_user_path(current_user), class: "side-bar__outside-box__inside-box__item__icons--cog" do
@@ -14,13 +14,10 @@
               
   .side-bar__group-list
     .side-bar__group-list__grops 
-      .side-bar__group-list__grops__name
-        group-name
-      .side-bar__group-list__grops__latest-message
-        latest-message
-    .side-bar__group-list__grops 
-      .side-bar__group-list__grops__name
-        group-name
-      .side-bar__group-list__grops__latest-message
-        latest-message
+      - current_user.groups.each do |group|
+        .side-bar__group-list__grops__name
+          = link_to group_messages_path(group), class:"side-bar__group-list__grops__name--list" do
+            = group.name
+        .side-bar__group-list__grops__latest-message
+          メッセージはまだありません
 
