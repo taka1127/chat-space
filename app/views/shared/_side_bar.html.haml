@@ -15,9 +15,10 @@
   .side-bar__group-list
     .side-bar__group-list__grops 
       - current_user.groups.each do |group|
-        .side-bar__group-list__grops__name
-          = link_to group_messages_path(group), class:"side-bar__group-list__grops__name--list" do
-            = group.name
-        .side-bar__group-list__grops__latest-message
-          メッセージはまだありません
+        .group
+          = link_to group_messages_path(group) , class:"link-group" do
+            .side-bar__group-list__grops__name
+              = group.name
+            .side-bar__group-list__grops__latest-message
+              = group.show_last_message
 
