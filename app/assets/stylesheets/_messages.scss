@@ -126,6 +126,7 @@
     width: calc(100vw - 300px);
     background-color: #fafafa;
     padding: 35px 40px;
+    overflow: scroll;
     &__message{
       padding-bottom: 46px;
       &__list{
@@ -153,8 +154,6 @@
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    // display: flex;
-    // justify-content: space-between;
     
     &__new-message{
       float: left;
@@ -179,11 +178,6 @@
       }  
       &__form{
         &--field{
-          
-          // width: 100px;
-          // height: 50px;
-          // background-color: blue;
-          // display: flex;
         }
         &--label{
           position: absolute;
