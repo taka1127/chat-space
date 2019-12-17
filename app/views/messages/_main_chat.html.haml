@@ -7,7 +7,7 @@
         - @group.users.each do |group|
           = group.name
     .main-chat__group-info__right-edit
-      = link_to edit_group_path(current_user), class: "main-chat__group-info__right-edit--btn" do
+      = link_to edit_group_path(@group), class: "main-chat__group-info__right-edit--btn" do
         %span<>
           Edit
   .main-chat__messages
