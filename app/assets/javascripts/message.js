@@ -1,41 +1,26 @@
 $(function(){
-  function buildHTML(message){
-    if (message.image){
+
+  function buildHTML(message) {
+      
+      image = (message.image) ? `<img class "lower-message__image" src=${message.image} >`: "";
+
       var html = `<div class="main-chat__messages__message" data-message-id="${message.id}">
                     <div class="main-chat__messages__message__list">
                       <div class="main-chat__messages__message__list__name">
-                      ${message.user_name}
+                        ${message.user_name}
                       </div>
                       <div class="main-chat__messages__message__list__date">
-                      ${message.date}
+                        ${message.created_at}
                       </div>
                     </div>
                     <div class="main-chat__messages__message__text">
                       <p class="lower-message__content">
-                      ${message.content}
+                        ${message.content}
                       </p>
-                      <img src=${message.image}>
+                      ${image}
                     </div>
                   </div>`
-      return html;
-    }  else {
-      var html =`<div class="main-chat__messages__message" data-message-id="${message.id}">
-                  <div class="main-chat__messages__message__list">
-                    <div class="main-chat__messages__message__list__name">
-                      ${message.user_name}
-                    </div>
-                    <div class="main-chat__messages__message__list__date">
-                    ${message.date}
-                    </div>
-                  </div>
-                  <div class="main-chat__messages__message__text">
-                    <p class="lower-message__content">
-                    ${message.content}
-                    </p>
-                  </div>
-                </div>`
-      return html;
-    };
+    return html;
   }
   $('.new_message').on('submit', function(e) {
     e.preventDefault();
@@ -60,4 +45,26 @@ $(function(){
     });
     return false;
   });
+  var reloadMessages = function() {
+
+    var last_message_id = $('.message:last').data("message-id")
+    $.ajax({
+      url: "api/messages",
+      type: 'get',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
+    .done(function(messages) {
+      var insertHTML = '';
+      $.each(messages, function(i, message) {
+        insertHTML += buildHTML(message)
+        $('.main-chat__messages').append(insertHTML);
+      });
+      $('.main-chat__messages').animate({scrollTop: $('.main-chat__messages')[0].scrollHeight}, 'fast');
+    })
+    .fail(function() {
+      console.log('error');
+    });
+  };
+  setInterval(reloadMessages, 7000);
 });
