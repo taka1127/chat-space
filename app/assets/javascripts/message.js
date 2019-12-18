@@ -2,7 +2,7 @@ $(function(){
 
   function buildHTML(message) {
       
-      image = (message.image) ? `<img class "lower-message__image" src=${message.image} >`: "";
+      var image = (message.image) ? `<img class "lower-message__image" src=${message.image} >`: "";
 
       var html = `<div class="main-chat__messages__message" data-message-id="${message.id}">
                     <div class="main-chat__messages__message__list">
@@ -20,7 +20,7 @@ $(function(){
                       ${image}
                     </div>
                   </div>`
-    return html;
+  return html;
   }
   $('.new_message').on('submit', function(e) {
     e.preventDefault();
@@ -46,26 +46,26 @@ $(function(){
     return false;
   });
   var reloadMessages = function() {
-   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-    var last_message_id = $('.message:last').data("message-id")
-    $.ajax({
-      url: "api/messages",
-      type: 'get',
-      dataType: 'json',
-      data: {id: last_message_id}
-    })
-    .done(function(messages) {
-      var insertHTML = '';
-      $.each(messages, function(i, message) {
-        insertHTML += buildHTML(message)
-        $('.main-chat__messages').append(insertHTML);
+    if (window.location.href.match(/\/groups\/\d+\/messages/)){
+      var last_message_id = $('.main-chat__messages__message:last').data("message-id")
+      $.ajax({
+        url: "api/messages",
+        type: 'get',
+        dataType: 'json',
+        data: {id: last_message_id}
+      })
+      .done(function(messages) {
+        var insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+          $('.main-chat__messages').append(insertHTML);
+        });
+        $('.main-chat__messages').animate({scrollTop: $('.main-chat__messages')[0].scrollHeight}, 'fast');
+      })
+      .fail(function() {
+        alert('error');
       });
-      $('.main-chat__messages').animate({scrollTop: $('.main-chat__messages')[0].scrollHeight}, 'fast');
-    })
-    .fail(function() {
-      alert('error');
-    });
-   }
+    }
   };
   setInterval(reloadMessages, 7000);
 });
