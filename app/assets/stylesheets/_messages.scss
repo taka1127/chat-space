@@ -28,7 +28,7 @@
         justify-content: space-between;
         display: flex;
         &__user-name{
-          font-size: 16px;
+          font-size: 20px;
           line-height: 20px;
           color: #ffffff;
         }
@@ -55,15 +55,17 @@
     background-color: #2f3e51;
     color: #ffffff;
     padding: 20px;
+    overflow: scroll;
     &__grops{
       margin-bottom: 40px;
       border: none;
     .group{
       text-decoration: none;
+      margin-bottom: 40px;
     }
       &__name{
         margin-bottom : 5px ;
-        font-size: 15px;
+        font-size: 20px;
         color: #ffffff;
         border: none;
         &--list{
@@ -72,7 +74,7 @@
         }
       }
       &__latest-message{
-        font-size: 11px;
+        font-size: 13px;
         color: #ffffff;
       }
       .link-group{
