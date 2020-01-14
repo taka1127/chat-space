@@ -1,0 +1,326 @@
+.header {
+  background-color: gray;
+  padding-top: 8px;
+  // width: 1020px;
+  height: 100px;
+  margin: 0 auto;
+  &__search-bar {
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      width: 120px;
+    }
+    &__form {
+      input {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 50px;
+        width: 780px;
+        height: 38px;
+        border-radius: 4px;
+        border: solid 1px gray;
+      }
+    }
+  }
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    
+    &__search-tags {
+      display: flex;
+      font-weight: bold;
+      .tag {
+        padding-right: 10px;
+        display: block;
+        font-size: 14px;
+      }
+
+    }
+    &__utilities {
+      ul {
+        display: flex;
+        li {
+          padding: 0 7px;
+          align-items: center;
+          display: flex;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+//------------ここまでヘッダー------------------
+
+//------------マイページ-------------------------
+*{
+  box-sizing: border-box;
+}
+.main{
+  background-color: rgb(187, 184, 184);
+  overflow: scroll;
+  &__container{
+    width: 1020px;
+    // height: 100vh;
+    margin: 40px auto 0 ;
+    background-color: ghostwhite;
+    &__content{
+      width: 700px;
+      float: right;
+      // border: solid 0.5px gray;
+      cursor: pointer;
+      &__user{
+        height: 200px;
+        // background-image:image-url('images.jpeg');
+        // background-size:  cover;
+        background-color: ghostwhite;
+        padding: 20px;
+        border: solid 0.5px gray;
+        &__erea{
+          top:50px;
+          text-align: center;
+          height: 100px;
+          background-color: rgba(240, 255, 240,0.3);
+          &__icon{
+            background-color: khaki;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+          }
+          &__name{
+
+          }
+          &__count{
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            &__evaluation{
+              margin-right: 10px;
+              width: 100px;
+              padding: 20px;
+              // background-color: lawngreen;
+            }
+            &__number{
+              margin-right: 10px;
+              width: 100px;
+              font-size: 14px;
+              padding: 20px;
+              // background-color: lemonchiffon;
+            }
+            &__sell{
+              margin-right: 10px;
+              width: 100px;
+              padding: 20px;
+              // background-color: lightcoral;
+            }
+            &__number{
+              margin-right: 10px;
+              width: 100px;
+              padding: 20px;
+              // background-color: lightsalmon;
+            }
+          }
+        }
+      }
+      &__tabs{
+        &__info{
+          width: 50%;
+          height: 72px;
+          text-align: center;
+          font-size: 22px;
+          line-height: 72px;
+          background-color:#f5f5f5;
+          border: solid 0.5px gray;
+          // position: relative;
+          float: left;
+        }
+        &__todo{
+          width: 50%;
+          height: 72px;
+          text-align: center;
+          font-size: 22px;
+          line-height: 72px;
+          background-color:#f5f5f5;
+          border: solid 0.5px gray;
+          // position: relative;
+          float: right;
+        }
+      }
+  //-------上下共通部分----------------
+      &__message{
+        height: 100px;
+        padding: 16px;
+        color: #333;
+        clear: both;
+        border: solid 0.5px gray;
+        &:hover{
+          background-color:blue;
+        }
+      }
+      &__lists{
+        height: 100px;
+        padding: 16px;
+        color: #333;
+        text-align: center;
+        line-height: 50px;
+        border: solid 0.5px gray;
+        background-color: rgba(182, 179, 166, 1);
+        &:hover{
+          background-color: rgba(182, 179, 166, 0.5);
+        }
+      }
+
+  //-------上下共通部分----------------
+
+      &__bottom{
+        height:56px;
+        padding: 16px;
+        margin: 40px 0 0;
+        border: solid 0.5px gray;
+      }
+      &__purchased{
+        &__now-trade{
+          width: 50%;
+          height: 72px;
+          text-align: center;
+          font-size: 22px;
+          line-height: 72px;
+          border: solid 0.5px gray;
+          background-color:#f5f5f5;
+          // position: relative;
+          float: left;
+        }
+        &__past-trade{
+          width: 50%;
+          height: 72px;
+          text-align: center;
+          font-size: 22px;
+          line-height: 72px;
+          border: solid 0.5px gray;
+          background-color:#f5f5f5;
+          // position: relative;
+          float: right;
+        }
+      }
+    }
+  //--------左のサイドバーーーーーー-------------
+    &__side{
+      // height: 400px;
+      width: 280px;
+      background-color: ghostwhite;
+      float: left;
+      margin: 0 40px 0 0;
+      &__nav{
+        &__list{
+          height: 48px;
+          width: 280;
+          border-style: solid;
+          border-width: 0;
+          padding: 16px;
+          color: #333;
+          cursor: pointer;
+          border: solid 0.5px gray;
+          // background-color: seashell;
+        }
+        &__header{
+          margin: 40px 0 0;
+          h3{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+//------------フッター--------------------------
+.footer {
+  background-color: black;
+  color: white;
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  li, p {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  &__banner {
+    &__contents {
+      width: 750px;
+      height: 260px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 24px;
+        padding-top: 40px;
+      }
+      h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+    }
+    #bg {
+      background-color: gray;
+      position: relative;
+    }
+  }
+  &__lists {
+    width: 1020px;
+    display: flex;
+    margin: 18px auto 0;
+    &__about {
+      width: 240px;
+      padding-right: 40px;
+      .logo-TWFB {
+        display: flex;
+        li {
+          margin: 30px 30px 0 0;
+        }
+      }
+    }
+    &__helps {
+      width: 240px;
+      padding-right: 40px;
+    }
+    &__privacy {
+      &__flexbox {
+        display: flex;
+        ul {
+          width: 240px;
+          padding-right: 10px;
+        }
+      }
+    }
+    &__country {
+      width: 85px;
+      padding-right: 40px;
+    }
+  }
+  &__bottom {
+    width: 1020px;
+    margin: 30px auto 0;
+    display: flex;
+    &__logo {
+      float: left;
+      width: 125px;
+    }
+    &__copyright {
+      &__copyright {
+        width: 770px;
+        text-align: center;
+        font-size: 8px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+
