@@ -32,80 +32,91 @@
 -#-----------支払い方法ページ----------------------------
 .main
   .main__container
-    
-
-        
-  -#------左のサイドバーーーーーー---------
-  .main__container__side
-    .main__container__side__nav
-      %ul
-        %li.main__container__side__nav__mypage
-          = link_to '#', class:'list' do
-            マイページ
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__info
-          = link_to '#', class:'list' do
-            お知らせ
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__todo
-          = link_to '#', class:'list' do
-            やることリスト
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__good
-          = link_to '#', class:'list' do
-            いいね！一覧
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__sell
-          = link_to '#', class:'list' do
-            出品する
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__exhibiting
-          = link_to '#', class:'list' do
-            出品した商品-出品中
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__trading
-          = link_to '#', class:'list'do
-            出品した商品-取引中
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__sold
-          = link_to '#', class:'list' do
-            出品した商品-売却済み
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__purchased
-          = link_to '#', class:'list' do
-            購入した商品-取引中
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__transaction
-          = link_to '#', class:'list' do
-            購入した商品-過去の取引
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__news
-          = link_to '#', class:'list' do
-            ニュース一覧
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__evaluation
-          = link_to '#', class:'list' do
-            評価一覧
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__guide
-          = link_to '#', class:'list' do
-            ガイド
-          %i.fas.fa-chevron-right
-        %li.main__container__side__nav__list__contact
-          = link_to '#', class:'list' do
-            お問い合わせ
-          %i.fas.fa-chevron-right
-        .main__container__side__nav__header
-          %h3メルペイ
-          %ul
-            %li.main__container__side__nav__list__balance
-              = link_to '#', class:'list' do
-                残高・振込申請
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__point
-              = link_to '#', class:'list' do
-                ポイント
-              %i.fas.fa-chevron-right
+    .main__container__right
+      .main__container__right__payment
+        支払い方法
+      .main__container__right__bottom
+        .main__container__right__bottom__section
+          クレジットカード一覧
+        .main__container__right__bottom__card
+          %i.far.fa-credit-card
+          = link_to '#', class:'card' do
+            クレジットカードを追加する
+        .main__container__right__bottom__info
+          = link_to '#', class:'info' do
+            支払い方法について
+            %i.fas.fa-chevron-right
+    -#------左のサイドバーーーーーー---------
+    .main__container__side
+      .main__container__side__nav
+        %ul
+          %li.main__container__side__nav__mypage
+            = link_to '#', class:'list' do
+              マイページ
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__info
+            = link_to '#', class:'list' do
+              お知らせ
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__todo
+            = link_to '#', class:'list' do
+              やることリスト
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__good
+            = link_to '#', class:'list' do
+              いいね！一覧
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__sell
+            = link_to '#', class:'list' do
+              出品する
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__exhibiting
+            = link_to '#', class:'list' do
+              出品した商品-出品中
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__trading
+            = link_to '#', class:'list'do
+              出品した商品-取引中
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__sold
+            = link_to '#', class:'list' do
+              出品した商品-売却済み
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__purchased
+            = link_to '#', class:'list' do
+              購入した商品-取引中
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__transaction
+            = link_to '#', class:'list' do
+              購入した商品-過去の取引
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__news
+            = link_to '#', class:'list' do
+              ニュース一覧
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__evaluation
+            = link_to '#', class:'list' do
+              評価一覧
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__guide
+            = link_to '#', class:'list' do
+              ガイド
+            %i.fas.fa-chevron-right
+          %li.main__container__side__nav__list__contact
+            = link_to '#', class:'list' do
+              お問い合わせ
+            %i.fas.fa-chevron-right
+          .main__container__side__nav__header
+            %h3メルペイ
+            %ul
+              %li.main__container__side__nav__list__balance
+                = link_to '#', class:'list' do
+                  残高・振込申請
+                %i.fas.fa-chevron-right
+              %li.main__container__side__nav__list__point
+                = link_to '#', class:'list' do
+                  ポイント
+                %i.fas.fa-chevron-right
         .main__container__side__nav__header
           %h3設定
           %ul
