@@ -1,0 +1,250 @@
+-# .header
+-#   .header__search-bar
+-#     .header__search-bar__logo
+-#       -# = link_to root_path do
+-#       = image_tag "fmarket_logo_red.svg"
+-#     .header__search-bar__form
+-#       %input{type: "search", name: "keyword", size: "80", placeholder: "何かお探しですか？"}/
+-#   .header__contents
+-#     .header__contents__search-tags
+-#       .header__contents__search-tags__category.tag
+-#         = link_to '#' do
+-#           ■カテゴリーから探す
+-#       .header__contents__search-tags__brand.tag
+-#         = link_to '#' do
+-#           ■ブランドから探す
+-#     .header__contents__utilities
+-#       %ul
+-#         %li.header__contents__utilities__likes
+-#           = link_to '#' do
+-#             ■いいね！一覧
+-#         %li.header__contents__utilities__notice
+-#           = link_to '#' do
+-#             ■お知らせ
+-#         %li.header__contents__utilities__todo
+-#           = link_to '#' do
+-#             ■やることリスト
+-#         %li.header__contents__utilities__mypage
+-#           = link_to '#' do
+-#             ■マイページ
+-# -#-----------ここまでヘッダー------------------------------
+
+-# -#-----------マイページ----------------------------
+-# .main
+-#   .main__container
+-#     .main__container__content
+-#       .main__container__content__user
+-#         .main__container__content__user__erea
+-#           .main__container__content__user__erea__icon
+-#           .main__container__content__user__erea__name
+-#             name  
+-#           .main__container__content__user__erea__count
+-#             .main__container__content__user__erea__count__evaluation
+-#               評価
+-#               %li
+-#                 13
+-#             .main__container__content__user__erea__count__sell
+-#               出品数
+-#               %li
+-#                 14
+-#       .main__container__content__tabs
+-#         .main__container__content__tabs__info
+-#           お知らせ
+-#         .main__container__content__tabs__todo
+-#           やることリスト
+-#       .main__container__content__message
+-#         .main__container__content__message__logo
+-#           =image_tag "logo_gray.svg" 
+-#         .main__container__content__message__nomessage
+-#           現在、やることリストはありません
+
+-#       -#---リストがある場合の「一覧を見る」の表示-------
+-#       -#.main__container__content__message
+-#         （お知らせリスト表示がされる）
+-#       -# .main__container__content__lists
+-#       -#   一覧に戻る
+
+-#       .main__container__content__bottom
+-#         購入した商品
+-#       .main__container__content__purchased
+-#         .main__container__content__purchased__now-trade
+-#           取引中
+-#         .main__container__content__purchased__past-trade
+-#           過去の取引
+-#       .main__container__content__message
+-#         .main__container__content__message__logo
+-#           =image_tag "logo_gray.svg" 
+-#         .main__container__content__message__nomessage
+-#           現在、やることリストはありません
+
+
+-#       -#---リストがある場合の「一覧を見る」の表示-------  
+-#       -# .main__container__content__lists
+-#       -#   一覧に戻る
+
+        
+-#     -#------左のサイドバーーーーーー---------
+-#     .main__container__side
+-#       .main__container__side__nav
+-#         %ul
+-#           %li.main__container__side__nav__mypage
+-#             = link_to '#', class:'list' do
+-#               マイページ
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__info
+-#             = link_to '#', class:'list' do
+-#               お知らせ
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__todo
+-#             = link_to '#', class:'list' do
+-#               やることリスト
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__good
+-#             = link_to '#', class:'list' do
+-#               いいね！一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__sell
+-#             = link_to '#', class:'list' do
+-#               出品する
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__exhibiting
+-#             = link_to '#', class:'list' do
+-#               出品した商品-出品中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__trading
+-#             = link_to '#', class:'list'do
+-#               出品した商品-取引中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__sold
+-#             = link_to '#', class:'list' do
+-#               出品した商品-売却済み
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__purchased
+-#             = link_to '#', class:'list' do
+-#               購入した商品-取引中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__transaction
+-#             = link_to '#', class:'list' do
+-#               購入した商品-過去の取引
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__news
+-#             = link_to '#', class:'list' do
+-#               ニュース一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__evaluation
+-#             = link_to '#', class:'list' do
+-#               評価一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__guide
+-#             = link_to '#', class:'list' do
+-#               ガイド
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__contact
+-#             = link_to '#', class:'list' do
+-#               お問い合わせ
+-#             %i.fas.fa-chevron-right
+-#           .main__container__side__nav__header
+-#             %h3メルペイ
+-#             %ul
+-#               %li.main__container__side__nav__list__balance
+-#                 = link_to '#', class:'list' do
+-#                   残高・振込申請
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__point
+-#                 = link_to '#', class:'list' do
+-#                   ポイント
+-#                 %i.fas.fa-chevron-right
+-#           .main__container__side__nav__header
+-#             %h3設定
+-#             %ul
+-#               %li.main__container__side__nav__list__profile
+-#                 = link_to '#', class:'list' do
+-#                   プロフィール
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__change-of-address
+-#                 = link_to '#', class:'list' do
+-#                   発送元・お届け先住所変更
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__payment
+-#                 = link_to '#', class:'list' do
+-#                   支払い方法
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__mail
+-#                 = link_to '#', class:'list' do
+-#                   メール/パスワード
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__identity
+-#                 = link_to '#', class:'list' do
+-#                   本人情報
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__tell
+-#                 = link_to '#', class:'list' do
+-#                   電話番号の確認
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__logout
+-#                 = link_to '#', class:'list' do
+-#                   ログアウト
+-#                 %i.fas.fa-chevron-right
+-# -#----------フッター-------------------------------
+-# .footer
+-#   .footer__banner
+-#     .footer__banner__bg
+-#     .footer__banner__contents
+-#       %p スマホでかんたんフリマアプリ
+-#       %p 今すぐ無料ダウンロード
+-#       .footer__banner__contents__banner-icons
+-#         .footer__banner__contents__banner-icons__mercari
+-#         .footer__banner__contents__banner-icons__stores
+-#           .footer__banner__contents__banner-icons__stores__app
+-#           .footer__banner__contents__banner-icons__stores__google
+-#     .footer__banner__figure
+-#   .footer__lists
+-#     .footer__lists__about
+-#       .footer__lists__about__head
+-#         メルカリについて
+-#       %ul
+-#         %li 会社概要（運営会社）
+-#         %li 採用情報
+-#         %li プレスリリース
+-#         %li 公式ブログ
+-#         %li メルカリロゴ利用ガイドライン
+-#         %li （ツイッター）
+-#         %li （フェイスブック）
+
+-#     .footer__lists__helps
+-#       .footer__lists__helps__head
+-#         ヘルプ＆ガイド
+-#       %ul
+-#         %li メルカリガイド
+-#         %li らくらくメルカリ便
+-#         %li ゆうゆうメルカリ便
+-#         %li 大型メルカリ便
+-#         %li 車体取引ガイド
+-#         %li メルカリあんしん・あんぜん宣言！
+-#         %li 偽ブランド品撲滅への取り組み
+-#         %li メルカリボックス
+
+-#     .footer__lists__privacy
+-#       .footer__lists__privacy__head
+-#         プライバシーと利用規約
+-#       .footer__lists__privacy__flexbox
+-#         %ul
+-#           %li プライバシーポリシー
+-#           %li メルカリ利用規約
+-#           %li あんしんスマホサポート制度に関する利用特約
+-#           %li コンプライアンスポリシー
+-#         %ul
+-#           %li 個人データの安全管理に係る基本方針
+-#           %li 特定商取引に関する表記
+-#           %li 資金決済法に基づく表示
+-#           %li 法令遵守法令遵守と犯罪防止のために
+-#     .footer__lists__country
+-#       .footer__lists__country__head
+-#         国
+-#       %ul
+-#         %li 日本
+-#         %li United States
+  
+-#   .footer__bottom
+-#     .footer__copyright__logo
+-#     .footer__copyright__copyright
