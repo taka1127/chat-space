@@ -30,22 +30,31 @@
 -#-----------ここまでヘッダー------------------------------
 
 -#-----------支払い方法ページ----------------------------
+-# .main
+-#   .main__container
+-#     .main__container__right
+-#       .main__container__right__payment
+-#         支払い方法
+-#       .main__container__right__bottom
+-#         .main__container__right__bottom__section
+-#           クレジットカード一覧
+-#         .main__container__right__bottom__card
+-#           %i.far.fa-credit-card
+-#           = link_to '#', class:'card' do
+-#             クレジットカードを追加する
+-#         .main__container__right__bottom__info
+-#           = link_to '#', class:'info' do
+-#             支払い方法について
+-#             %i.fas.fa-chevron-right
+
+-#-----------ログアウトページ----------------------------
 .main
   .main__container
-    .main__container__right
-      .main__container__right__payment
-        支払い方法
-      .main__container__right__bottom
-        .main__container__right__bottom__section
-          クレジットカード一覧
-        .main__container__right__bottom__card
-          %i.far.fa-credit-card
-          = link_to '#', class:'card' do
-            クレジットカードを追加する
-        .main__container__right__bottom__info
-          = link_to '#', class:'info' do
-            支払い方法について
-            %i.fas.fa-chevron-right
+    .main__container__l-container
+      .main__container__l-container__btn
+        =link_to '#', class:'logout' do
+          ログアウト
+
     -#------左のサイドバーーーーーー---------
     .main__container__side
       .main__container__side__nav
