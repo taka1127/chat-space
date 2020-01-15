@@ -79,16 +79,42 @@
       .main__container__r-container__header
         本人情報の登録
       .main__container__r-container__register
-        .main__container__p-container__register__i-erea
-          .main__container__p-container__profile__i-erea__content
-            .main__container__p-container__profile__i-erea__content__icon
-            .main__container__p-container__profile__i-erea__content__name
-              name
-        .main__container__p-container__profile__text
-          %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
-        .main__container__p-container__profile__btn
-          =link_to '#', class:'change' do
-            変更する
+        .main__container__r-container__register__upload
+          %p お客さまの本人情報をご登録ください。
+          %p 登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+          = link_to "#", class:"verification" do
+            本人確認書類のアッロードについて
+            %i.fas.fa-chevron-right
+
+        .main__container__r-container__register__form
+          お名前
+        .main__container__r-container__register__form
+          お名前カナ
+        .main__container__r-container__register__form
+          生年月日
+        .main__container__r-container__register__form
+          郵便番号
+        .main__container__r-container__register__form
+          都道府県
+        .main__container__r-container__register__form
+          市町村
+        .main__container__r-container__register__form
+          番地
+        .main__container__r-container__register__form
+          建物名
+        .main__container__r-container__register__btn
+          =link_to '#', class:'register' do
+            登録する
+        .main__container__r-container__register__info
+          = link_to "#", class:"register-info" do
+            本人情報の登録について
+            %i.fas.fa-chevron-right
+
+        -# .main__container__r-container__register__text
+        -#   %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
+        -# .main__container__r-container__register__btn
+        -#   =link_to '#', class:'change' do
+        -#     変更する
 
   
 
