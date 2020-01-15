@@ -197,7 +197,7 @@
 &__r-container{
   float: right;
   width: 700px;
-  height: 1200px;
+  height: 1100px;
   background-color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   &__header{
@@ -208,13 +208,13 @@
     font-weight: bold;
     font-size: 24px;
     text-align: center;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #c8c2c2;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   &__register{
     width: 570px;
-    height: 1000px;
-    padding: 65px;
+    height: 900px;
+    padding: 65px 0 65px 65px ;
     font-size: 14px;
     font-weight: lighter;
     &__upload{
@@ -235,8 +235,61 @@
     }
     &__form{
       width: 570px;
-      height: 70px;
-      margin-top: 40px;
+      height: 30px;
+      margin-top: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-start;
+      &__any{
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        width: 40px;
+        height: 20px;
+        margin-left: 10px;
+        line-height: 20px;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgba(190, 185, 185, 0.8);
+      }
+      &__edit{
+        .person{
+          width: 530px;
+          height: 40px;
+          padding: 10px 16px 8px;
+          border-radius: 2px;
+          background-color: white;
+          border: 1px solid gray;
+        }
+      }
+      &__p-edit{
+        .prefectures{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 530px;
+          height: 40px;
+          display: block;
+          padding: 10px 16px 8px;
+          border-radius: 2px;
+          cursor: pointer;
+          background-color: white;
+          display: block;
+          .fas.fa-chevron-down{
+            float: right;
+            font-size: 20px;
+            color: rgba(87, 84, 84, 0.8);
+            right: 100px;
+          }
+          select::-ms-expand {
+              display: none;
+          }
+        }
+      }
+    }
+    &__info{
+      font-size: 14px;
+      height: 40px;
+      font-weight: normal;
     }
     &__btn{
       width: 570px;
@@ -257,9 +310,10 @@
         }
       }
     }
-    &__info{
+    &__r-info{
       width: 570px;
       height: 50px;
+      margin: 0 auto;
       .register-info{
         display: block;
         text-decoration: none;
@@ -267,8 +321,10 @@
         margin-top: 20px;
         color: rgb(78, 196, 243);
         font-family: serif;
+        font-size: 14px;
         .fas.fa-chevron-right{
           font-size: 16px;
+          padding-top: 30px;
         }
       }
     }
