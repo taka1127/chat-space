@@ -99,66 +99,103 @@
 //-------↑ログアウトページ↑----------------
 
 //-------プロフィールページ----------------
-&__p-container{
-  float: right;
-  width: 700px;
-  height: 570px;
-  background-color: white;
-  &__header{
-    width: 650px;
-    height: 50px;
-    padding: 8px 28px;
-    margin: 0 auto;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    border-bottom: 1px solid #f5f5f5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  &__profile{
-    width: 700px;
-    height: 520px;
-    background-color: yellow;
-    &__i-erea{
-      width: 700px;
-      height: 150px;
-      margin: 0 auto;
-      background-image:image-url('f5124c288ae8f3bbdf9e627b75412077_w.jpg');
-      background-size:cover;
-      &__content{
-        height: 100px;
-        width: 700px;
-        padding-top: 50px;
-        display: flex;
-        justify-content: center;
-        &__icon{
-          height: 70px;
-          width: 70px;
-          border-radius: 50%;
-          background-image:image-url('3be29de409585ddcd1adae7d6aabfa54_w.jpg');
-          background-size:  cover;
-        }
-        &__name{
-          width: 190px;
-          height: 50px;
-          margin:10px 0 0 20px;
-          padding-left: 10px;
-          border-radius: 5px;
-          font-size: 15px;
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          line-height: 50px;
-          background-color: white;
-        }
-      }
-    }
-    &__text{
-      height: 500px;
-      width: 700px;
-      background-color: white;
-    }
-  }
-}
+// &__p-container{
+//   float: right;
+//   width: 700px;
+//   height: 570px;
+//   background-color: white;
+//   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//   &__header{
+//     width: 650px;
+//     height: 50px;
+//     padding: 8px 28px;
+//     margin: 0 auto;
+//     font-weight: bold;
+//     font-size: 24px;
+//     text-align: center;
+//     border-bottom: 1px solid #f5f5f5;
+//     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//   }
+//   &__profile{
+//     width: 700px;
+//     height: 530px;
+//     background-color: white;
+//     &__i-erea{
+//       width: 700px;
+//       height: 150px;
+//       margin: 0 auto;
+//       background-image:image-url('24d7ce1e93b90c1e49dcf21d2e079a42_w.jpg');
+//       background-size:cover;
+//       &__content{
+//         height: 100px;
+//         width: 700px;
+//         padding-top: 50px;
+//         display: flex;
+//         justify-content: center;
+//         &__icon{
+//           height: 70px;
+//           width: 70px;
+//           border-radius: 50%;
+//           background-image:image-url('3be29de409585ddcd1adae7d6aabfa54_w.jpg');
+//           background-size:  cover;
+//         }
+//         &__name{
+//           width: 190px;
+//           height: 50px;
+//           margin:10px 0 0 20px;
+//           padding-left: 10px;
+//           border-radius: 5px;
+//           font-size: 15px;
+//           // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//           line-height: 50px;
+//           background-color: white;
+//         }
+//       }
+//     }
+//     &__text{
+//       height: 300px;
+//       width: 700px;
+//       padding: 40px 15px;
+//       background-color: white;
+//       #profile{
+//         display: block;
+//         height: 250px;
+//         width: 650px;
+//         border: solid 0.1px rgba(128,128,128,0.7);
+//         margin: 0 auto;
+//         font-size: 16px;
+//         padding: 10px;
+//         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//         color:rgba(51,51,51,0.7);
+//       }
+//     }
+//     &__btn{
+//       width: 660px;
+//       height: 50px;
+//       margin: 10px auto ;
+//       .change{
+//         display: block;
+//         text-align: center;
+//         line-height: 50px;
+//         text-decoration: none;
+//         font-size: 13px;
+//         color: white;
+//         background-color:#ea352d;
+//         border: 1px solid #ea352d;
+//         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//         &:hover{
+//           background-color: rgb(214, 22, 22);
+//           transition:all 0.3s;
+//         }
+//       }
+//     }
+//   }
+// }
 //-------↑プロフィールページ↑----------------
+
+//-------本人確認ページ------------------
+
+//-------↑本人確認ページ↑----------------
 &__side{
       width: 280px;
       float: left;
