@@ -377,8 +377,36 @@
         %li 住所登録
         %li 支払い方法
         %li 完了
-
     .p-main__container__content
+      .p-main__container__content__header
+        電話番号の確認
+      .p-main__container__content__tell
+        携帯電話の番号
+        %input{type: "text", name: "tell-number", size: "50", placeholder:"携帯電話の番号を入力" ,class:"tell-number"}
+      .p-main__container__content__info
+        本人確認のため、携帯電話のSMS（ショートメッセージサービス）を利用して認証を行います。
+      .p-main__container__content__btn
+        = link_to '#', class:'sms' do
+          SMSを送信する
+      .p-main__container__content__note
+        ＊電話番号は本人確認や不正利用防止のために利用します。他のユーザーに公開されることはありません。
+      .p-main__container__content__reason
+        = link_to "#", class:"register-info" do
+          電話番号の確認が必要な理由
+          %i.fas.fa-chevron-right
     .p-main__container__footer
-
+      .p-main__container__footer__info
+        .p-main__container__footer__info__rule
+          = link_to "#", class:"notation" do
+            プライバシーポリシー
+        .p-main__container__footer__info__rule
+          = link_to "#", class:"notation" do
+            フリマ利用規約
+        .p-main__container__footer__info__rule
+          = link_to "#", class:"notation" do
+            特定商取引に関する表記
+      .p-main__container__footer__logo
+        =image_tag "logo_gray.svg"
+      .p-main__container__footer__copyright
+        ©️2019　Frema
 

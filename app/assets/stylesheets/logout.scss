@@ -507,19 +507,118 @@
           padding-left: 10px;
           margin-left: 30px;
           list-style: none;
-
         }
       }
     }
     &__content{
       width: 100%;
       height: 500px;
-      background-color: yellowgreen;
+      background-color: white;
+      &__header{
+        width: 100%;
+        height: 70px;
+        padding: 8px 28px;
+        margin: 0 auto;
+        font-size: 24px;
+        text-align: center;
+        border-bottom: 1px solid #c8c2c2;
+      }
+      &__tell{
+        padding: 0 200px;
+        margin-top: 70px;
+        .tell-number{
+          display: block;
+          width: 300px;
+          height: 40px;
+          padding: 10px 16px 8px;
+          margin-top: 10px;
+          border-radius: 3px;
+          background-color: white;
+          border: 1px solid gray;
+        }
+      }
+      &__info{
+        padding: 0 190px;
+        margin-top: 10px;
+      }
+      &__btn{
+        padding: 0 200px;
+        .sms{
+          display: block;
+          text-align: center;
+          line-height: 50px;
+          text-decoration: none;
+          font-size: 13px;
+          color: white;
+          background-color:#ea352d;
+          border: 1px solid #ea352d;
+          margin-top: 50px;
+          &:hover{
+            background-color: rgb(214, 22, 22);
+            transition:all 0.3s;
+          }
+        }
+      }
+      &__note{
+        padding: 0 200px;
+        margin-top: 20px;
+      }
+      &__reason{
+        padding: 0 200px;
+        text-align: right;
+        .register-info{
+          text-decoration: none;
+          color: rgb(48, 153, 214);
+          font-size: 15px;
+        }
+        .fas.fa-chevron-right{
+          color: rgb(48, 153, 214);
+          font-size: 15px;
+        }
+      }
     }
     &__footer{
       width: 100%;
       height: 300px;
-      background-color: blue;
+      &__info{
+        width: 400px;
+        height: 100px;
+        font-size: 10px;
+        display: flex;
+        margin: 0 auto;
+        &__rule{
+          .notation{
+            display: block;
+            height: 50px;
+            text-decoration: none;
+            color: rgba(128, 128, 128, 0.8);
+            margin: 50px 20px;
+          }
+        }
+      }
+      &__logo{
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+      }
+      &__copyright{
+        margin: 0 auto;
+        font-size: 10px;
+        text-align: center;
+      }
     }
   }
 }
+// .list{
+  //               text-decoration: none;
+  //               color: #333;
+  //               font-size: 14px;
+  //             }
+  //             .fas.fa-chevron-right{
+  //               opacity: 0.5;
+  //               &:hover{
+  //                 opacity: 1;
+  //                 font-size: 20px;
+  //                 transition:all 0.5s;
+  //               }
+  //             }
