@@ -262,10 +262,7 @@
         }
       }
       &__p-edit{
-        .prefectures{
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
+        .label{
           width: 530px;
           height: 40px;
           display: block;
@@ -273,7 +270,22 @@
           border-radius: 2px;
           cursor: pointer;
           background-color: white;
-          display: block;
+          border: 1px solid gray;
+          position: relative;
+          .prefectures{
+            position: absolute;
+            width: 530px;
+            height: 40px;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            display: inline-block;
+          }
           .fas.fa-chevron-down{
             float: right;
             font-size: 20px;
