@@ -1,108 +1,203 @@
-.header {
-  background-color: gray;
-  padding-top: 8px;
-  // width: 1020px;
-  height: 100px;
-  margin: 0 auto;
-  &__search-bar {
-    display: flex;
-    justify-content: space-between;
-    &__logo {
-      width: 120px;
-    }
-    &__form {
-      input {
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 50px;
-        width: 780px;
-        height: 38px;
-        border-radius: 4px;
-        border: solid 1px gray;
-      }
-    }
-  }
-  &__contents {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-    height: 44px;
-    line-height: 44px;
-    cursor: pointer;
+// .header {
+//   background-color: gray;
+//   padding-top: 8px;
+//   // width: 1020px;
+//   height: 100px;
+//   margin: 0 auto;
+//   &__search-bar {
+//     display: flex;
+//     justify-content: space-between;
+//     &__logo {
+//       width: 120px;
+//     }
+//     &__form {
+//       input {
+//         font-size: 16px;
+//         padding-left: 10px;
+//         padding-right: 50px;
+//         width: 780px;
+//         height: 38px;
+//         border-radius: 4px;
+//         border: solid 1px gray;
+//       }
+//     }
+//   }
+//   &__contents {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 8px;
+//     height: 44px;
+//     line-height: 44px;
+//     cursor: pointer;
     
-    &__search-tags {
-      display: flex;
-      font-weight: bold;
-      .tag {
-        padding-right: 10px;
-        display: block;
-        font-size: 14px;
-      }
+//     &__search-tags {
+//       display: flex;
+//       font-weight: bold;
+//       .tag {
+//         padding-right: 10px;
+//         display: block;
+//         font-size: 14px;
+//       }
 
-    }
-    &__utilities {
-      ul {
-        display: flex;
-        li {
-          padding: 0 7px;
-          align-items: center;
-          display: flex;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-}
+//     }
+//     &__utilities {
+//       ul {
+//         display: flex;
+//         li {
+//           padding: 0 7px;
+//           align-items: center;
+//           display: flex;
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 
-//------------ここまでヘッダー------------------
+// //------------ここまでヘッダー------------------
 
-//------------マイページ-------------------------
-*{
-  box-sizing: border-box;
-}
-.main{
-  background-color: #f5f5f5;
-  overflow: scroll;
-  width: 100%;
-  height: 100%;
-  &__container{
-    width: 1020px;
-    margin: 40px auto 0 ;
-//---ログアウトページ------------------------
-    // &__l-container{
-    //   float: right;
-    //   width: 700px;
-    //   height: 180px;
-    //   padding: 65px;
-    //   background-color: white;
-    //   &__btn{
-    //     width: 320px;
-    //     height: 50px;
-    //     margin: 0 120px;
-    //     text-align: center;
-    //     background-color: rgba(255,0,0,0.9);
-    //     &:hover{
-    //       background-color: rgba(255,0,0,1);
-    //       transition:all 0.3s;
-    //     }
-    //     .logout{
-    //       display: block;
-    //       text-decoration: none;
-    //       line-height: 50px;
-    //       color: white;
-    //       font-size: 13px;
-    //       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    //     }
-    //   }
-    // }
-//-------↑ログアウトページ↑----------------
+// //------------マイページ-------------------------
+// *{
+//   box-sizing: border-box;
+// }
+// .main{
+//   background-color: #f5f5f5;
+//   overflow: scroll;
+//   width: 100%;
+//   height: 100%;
+//   &__container{
+//     width: 1020px;
+//     margin: 40px auto 0 ;
+// //---ログアウトページ------------------------
+//     // &__l-container{
+//     //   float: right;
+//     //   width: 700px;
+//     //   height: 180px;
+//     //   padding: 65px;
+//     //   background-color: white;
+//     //   &__btn{
+//     //     width: 320px;
+//     //     height: 50px;
+//     //     margin: 0 120px;
+//     //     text-align: center;
+//     //     background-color: rgba(255,0,0,0.9);
+//     //     &:hover{
+//     //       background-color: rgba(255,0,0,1);
+//     //       transition:all 0.3s;
+//     //     }
+//     //     .logout{
+//     //       display: block;
+//     //       text-decoration: none;
+//     //       line-height: 50px;
+//     //       color: white;
+//     //       font-size: 13px;
+//     //       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//     //     }
+//     //   }
+//     // }
+// //-------↑ログアウトページ↑----------------
 
-//-------プロフィールページ----------------
-// &__p-container{
+// //-------プロフィールページ----------------
+// // &__p-container{
+// //   float: right;
+// //   width: 700px;
+// //   height: 570px;
+// //   background-color: white;
+// //   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// //   &__header{
+// //     width: 650px;
+// //     height: 50px;
+// //     padding: 8px 28px;
+// //     margin: 0 auto;
+// //     font-weight: bold;
+// //     font-size: 24px;
+// //     text-align: center;
+// //     border-bottom: 1px solid #f5f5f5;
+// //     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// //   }
+// //   &__profile{
+// //     width: 700px;
+// //     height: 530px;
+// //     background-color: white;
+// //     &__i-erea{
+// //       width: 700px;
+// //       height: 150px;
+// //       margin: 0 auto;
+// //       background-image:image-url('24d7ce1e93b90c1e49dcf21d2e079a42_w.jpg');
+// //       background-size:cover;
+// //       &__content{
+// //         height: 100px;
+// //         width: 700px;
+// //         padding-top: 50px;
+// //         display: flex;
+// //         justify-content: center;
+// //         &__icon{
+// //           height: 70px;
+// //           width: 70px;
+// //           border-radius: 50%;
+// //           background-image:image-url('3be29de409585ddcd1adae7d6aabfa54_w.jpg');
+// //           background-size:  cover;
+// //         }
+// //         &__name{
+// //           width: 190px;
+// //           height: 50px;
+// //           margin:10px 0 0 20px;
+// //           padding-left: 10px;
+// //           border-radius: 5px;
+// //           font-size: 15px;
+// //           // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// //           line-height: 50px;
+// //           background-color: white;
+// //         }
+// //       }
+// //     }
+// //     &__text{
+// //       height: 300px;
+// //       width: 700px;
+// //       padding: 40px 15px;
+// //       background-color: white;
+// //       #profile{
+// //         display: block;
+// //         height: 250px;
+// //         width: 650px;
+// //         border: solid 0.1px rgba(128,128,128,0.7);
+// //         margin: 0 auto;
+// //         font-size: 16px;
+// //         padding: 10px;
+// //         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// //         color:rgba(51,51,51,0.7);
+// //       }
+// //     }
+// //     &__btn{
+// //       width: 660px;
+// //       height: 50px;
+// //       margin: 10px auto ;
+// //       .change{
+// //         display: block;
+// //         text-align: center;
+// //         line-height: 50px;
+// //         text-decoration: none;
+// //         font-size: 13px;
+// //         color: white;
+// //         background-color:#ea352d;
+// //         border: 1px solid #ea352d;
+// //         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+// //         &:hover{
+// //           background-color: rgb(214, 22, 22);
+// //           transition:all 0.3s;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+// //-------↑プロフィールページ↑----------------
+
+// //-------本人確認ページ------------------
+// &__r-container{
 //   float: right;
 //   width: 700px;
-//   height: 570px;
+//   height: 1100px;
 //   background-color: white;
 //   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 //   &__header{
@@ -113,67 +208,106 @@
 //     font-weight: bold;
 //     font-size: 24px;
 //     text-align: center;
-//     border-bottom: 1px solid #f5f5f5;
+//     border-bottom: 1px solid #c8c2c2;
 //     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 //   }
-//   &__profile{
-//     width: 700px;
-//     height: 530px;
-//     background-color: white;
-//     &__i-erea{
-//       width: 700px;
-//       height: 150px;
+//   &__register{
+//     width: 570px;
+//     height: 900px;
+//     padding: 65px 0 65px 65px ;
+//     font-size: 14px;
+//     font-weight: lighter;
+//     &__upload{
+//       width: 570px;
+//       height: 50px;
 //       margin: 0 auto;
-//       background-image:image-url('24d7ce1e93b90c1e49dcf21d2e079a42_w.jpg');
-//       background-size:cover;
-//       &__content{
-//         height: 100px;
-//         width: 700px;
-//         padding-top: 50px;
-//         display: flex;
-//         justify-content: center;
-//         &__icon{
-//           height: 70px;
-//           width: 70px;
-//           border-radius: 50%;
-//           background-image:image-url('3be29de409585ddcd1adae7d6aabfa54_w.jpg');
-//           background-size:  cover;
-//         }
-//         &__name{
-//           width: 190px;
-//           height: 50px;
-//           margin:10px 0 0 20px;
-//           padding-left: 10px;
-//           border-radius: 5px;
-//           font-size: 15px;
-//           // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-//           line-height: 50px;
-//           background-color: white;
+//       font-family: serif;
+//       .verification{
+//         display: block;
+//         text-decoration: none;
+//         text-align: right;
+//         margin-top: 5px;
+//         color: rgb(78, 196, 243);
+//         .fas.fa-chevron-right{
+//           font-size: 16px;
 //         }
 //       }
 //     }
-//     &__text{
-//       height: 300px;
-//       width: 700px;
-//       padding: 40px 15px;
-//       background-color: white;
-//       #profile{
-//         display: block;
-//         height: 250px;
-//         width: 650px;
-//         border: solid 0.1px rgba(128,128,128,0.7);
-//         margin: 0 auto;
-//         font-size: 16px;
-//         padding: 10px;
-//         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-//         color:rgba(51,51,51,0.7);
+//     &__form{
+//       width: 570px;
+//       height: 30px;
+//       margin-top: 20px;
+//       font-weight: bold;
+//       display: flex;
+//       justify-content: flex-start;
+//       &__any{
+//         font-size: 10px;
+//         color: rgba(255, 255, 255, 0.8);
+//         width: 40px;
+//         height: 20px;
+//         margin-left: 10px;
+//         line-height: 20px;
+//         border-radius: 5px;
+//         text-align: center;
+//         background-color: rgba(190, 185, 185, 0.8);
 //       }
+//       &__edit{
+//         .person{
+//           width: 530px;
+//           height: 40px;
+//           padding: 10px 16px 8px;
+//           border-radius: 2px;
+//           background-color: white;
+//           border: 1px solid gray;
+//         }
+//       }
+//       &__p-edit{
+//         .label{
+//           width: 530px;
+//           height: 40px;
+//           display: block;
+//           padding: 10px 16px 8px;
+//           border-radius: 2px;
+//           cursor: pointer;
+//           background-color: white;
+//           border: 1px solid gray;
+//           position: relative;
+//           .prefectures{
+//             position: absolute;
+//             width: 530px;
+//             height: 40px;
+//             left: 0;
+//             top: 0;
+//             padding: 10px;
+//             border: none;
+//             background-color: rgba(255, 255, 255, 0);
+//             -webkit-appearance: none;
+//             -moz-appearance: none;
+//             appearance: none;
+//             display: inline-block;
+//           }
+//           .fas.fa-chevron-down{
+//             float: right;
+//             font-size: 20px;
+//             color: rgba(87, 84, 84, 0.8);
+//             right: 100px;
+//           }
+//           select::-ms-expand {
+//               display: none;
+//           }
+//         }
+//       }
+//     }
+//     &__info{
+//       font-size: 14px;
+//       height: 40px;
+//       font-weight: normal;
 //     }
 //     &__btn{
-//       width: 660px;
+//       width: 570px;
 //       height: 50px;
-//       margin: 10px auto ;
-//       .change{
+//       margin: 10px auto;
+//       .register{
 //         display: block;
 //         text-align: center;
 //         line-height: 50px;
@@ -182,295 +316,210 @@
 //         color: white;
 //         background-color:#ea352d;
 //         border: 1px solid #ea352d;
-//         // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 //         &:hover{
 //           background-color: rgb(214, 22, 22);
 //           transition:all 0.3s;
 //         }
 //       }
 //     }
+//     &__r-info{
+//       width: 570px;
+//       height: 50px;
+//       margin: 0 auto;
+//       .register-info{
+//         display: block;
+//         text-decoration: none;
+//         text-align: right;
+//         margin-top: 20px;
+//         color: rgb(78, 196, 243);
+//         font-family: serif;
+//         font-size: 14px;
+//         .fas.fa-chevron-right{
+//           font-size: 16px;
+//           padding-top: 30px;
+//         }
+//       }
+//     }
 //   }
 // }
-//-------↑プロフィールページ↑----------------
 
-//-------本人確認ページ------------------
-&__r-container{
-  float: right;
-  width: 700px;
-  height: 1100px;
-  background-color: white;
+// //-------↑本人確認ページ↑----------------
+// &__side{
+//       width: 280px;
+//       float: left;
+//       margin: 0 40px 0 0;
+//       &__nav{
+//         ul{
+//           li{
+//             height: 48px;
+//             width: 280;
+//             padding: 16px;
+//             color: #333;
+//             cursor: pointer;
+//             border: solid 0.1px gray;
+//             display: flex;
+//             justify-content: space-between;
+//             background-color: white;
+//             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//             .list{
+//               text-decoration: none;
+//               color: #333;
+//               font-size: 14px;
+//             }
+//             .fas.fa-chevron-right{
+//               opacity: 0.5;
+//               &:hover{
+//                 opacity: 1;
+//                 font-size: 20px;
+//                 transition:all 0.5s;
+//               }
+//             }
+//           }
+//         }
+//         &__header{
+//           padding-top:40px ;
+//           background-color: #f5f5f5;
+//           h3{
+//             font-weight: bold;
+//             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// //------------フッター--------------------------
+// .footer {
+//   background-color: black;
+//   color: white;
+//   h2 {
+//     font-size: 16px;
+//     font-weight: bold;
+//     margin-bottom: 16px;
+//   }
+//   li, p {
+//     font-size: 12px;
+//     padding: 8px 0;
+//   }
+//   &__banner {
+//     &__contents {
+//       width: 750px;
+//       height: 260px;
+//       margin: 0 auto;
+
+//       h2 {
+//         font-size: 24px;
+//         padding-top: 40px;
+//       }
+//       h1 {
+//         font-size: 35px;
+//         margin-bottom: 20px;
+//       }
+//     }
+//     #bg {
+//       background-color: gray;
+//       position: relative;
+//     }
+//   }
+//   &__lists {
+//     width: 1020px;
+//     display: flex;
+//     margin: 18px auto 0;
+//     &__about {
+//       width: 240px;
+//       padding-right: 40px;
+//       .logo-TWFB {
+//         display: flex;
+//         li {
+//           margin: 30px 30px 0 0;
+//         }
+//       }
+//     }
+//     &__helps {
+//       width: 240px;
+//       padding-right: 40px;
+//     }
+//     &__privacy {
+//       &__flexbox {
+//         display: flex;
+//         ul {
+//           width: 240px;
+//           padding-right: 10px;
+//         }
+//       }
+//     }
+//     &__country {
+//       width: 85px;
+//       padding-right: 40px;
+//     }
+//   }
+//   &__bottom {
+//     width: 1020px;
+//     margin: 30px auto 0;
+//     display: flex;
+//     &__logo {
+//       float: left;
+//       width: 125px;
+//     }
+//     &__copyright {
+//       &__copyright {
+//         width: 770px;
+//         text-align: center;
+//         font-size: 8px;
+//         padding-bottom: 30px;
+//       }
+//     }
+//   }
+// }
+//-----電話番号確認ページ--------------------------
+*{
+  box-sizing: border-box;
+}
+.p-main{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  &__header{
-    width: 650px;
-    height: 50px;
-    padding: 8px 28px;
+  &__container{
+    width: 800px;
+    height: 1000px;
     margin: 0 auto;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    border-bottom: 1px solid #c8c2c2;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  &__register{
-    width: 570px;
-    height: 900px;
-    padding: 65px 0 65px 65px ;
-    font-size: 14px;
-    font-weight: lighter;
-    &__upload{
-      width: 570px;
-      height: 50px;
-      margin: 0 auto;
-      font-family: serif;
-      .verification{
-        display: block;
-        text-decoration: none;
-        text-align: right;
-        margin-top: 5px;
-        color: rgb(78, 196, 243);
-        .fas.fa-chevron-right{
-          font-size: 16px;
-        }
-      }
-    }
-    &__form{
-      width: 570px;
-      height: 30px;
-      margin-top: 20px;
-      font-weight: bold;
+    padding: 30px;
+    background-color: #f5f5f5;
+    &__header{
+      width: 100%;
+      height: 150px;
       display: flex;
-      justify-content: flex-start;
-      &__any{
-        font-size: 10px;
-        color: rgba(255, 255, 255, 0.8);
-        width: 40px;
-        height: 20px;
-        margin-left: 10px;
-        line-height: 20px;
-        border-radius: 5px;
-        text-align: center;
-        background-color: rgba(190, 185, 185, 0.8);
+      justify-content: space-between;
+      line-height: 130px;
+      // background-color: yellow;
+      &__logo{
+        width: 200px;
+        height: 100px;
+        margin: 30px 0 20px 20px;
       }
-      &__edit{
-        .person{
-          width: 530px;
-          height: 40px;
-          padding: 10px 16px 8px;
-          border-radius: 2px;
-          background-color: white;
-          border: 1px solid gray;
-        }
-      }
-      &__p-edit{
-        .label{
-          width: 530px;
-          height: 40px;
-          display: block;
-          padding: 10px 16px 8px;
-          border-radius: 2px;
-          cursor: pointer;
-          background-color: white;
-          border: 1px solid gray;
-          position: relative;
-          .prefectures{
-            position: absolute;
-            width: 530px;
-            height: 40px;
-            left: 0;
-            top: 0;
-            padding: 10px;
-            border: none;
-            background-color: rgba(255, 255, 255, 0);
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            display: inline-block;
-          }
-          .fas.fa-chevron-down{
-            float: right;
-            font-size: 20px;
-            color: rgba(87, 84, 84, 0.8);
-            right: 100px;
-          }
-          select::-ms-expand {
-              display: none;
-          }
-        }
-      }
-    }
-    &__info{
-      font-size: 14px;
-      height: 40px;
-      font-weight: normal;
-    }
-    &__btn{
-      width: 570px;
-      height: 50px;
-      margin: 10px auto;
-      .register{
-        display: block;
-        text-align: center;
-        line-height: 50px;
-        text-decoration: none;
-        font-size: 13px;
-        color: white;
-        background-color:#ea352d;
-        border: 1px solid #ea352d;
-        &:hover{
-          background-color: rgb(214, 22, 22);
-          transition:all 0.3s;
-        }
-      }
-    }
-    &__r-info{
-      width: 570px;
-      height: 50px;
-      margin: 0 auto;
-      .register-info{
-        display: block;
-        text-decoration: none;
-        text-align: right;
-        margin-top: 20px;
-        color: rgb(78, 196, 243);
-        font-family: serif;
-        font-size: 14px;
-        .fas.fa-chevron-right{
-          font-size: 16px;
-          padding-top: 30px;
-        }
-      }
-    }
-  }
-}
-
-//-------↑本人確認ページ↑----------------
-&__side{
-      width: 280px;
-      float: left;
-      margin: 0 40px 0 0;
-      &__nav{
-        ul{
-          li{
-            height: 48px;
-            width: 280;
-            padding: 16px;
-            color: #333;
-            cursor: pointer;
-            border: solid 0.1px gray;
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            .list{
-              text-decoration: none;
-              color: #333;
-              font-size: 14px;
-            }
-            .fas.fa-chevron-right{
-              opacity: 0.5;
-              &:hover{
-                opacity: 1;
-                font-size: 20px;
-                transition:all 0.5s;
-              }
-            }
-          }
-        }
-        &__header{
-          padding-top:40px ;
-          background-color: #f5f5f5;
-          h3{
-            font-weight: bold;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-          }
-        }
-      }
-    }
-  }
-}
-
-//------------フッター--------------------------
-.footer {
-  background-color: black;
-  color: white;
-  h2 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-  li, p {
-    font-size: 12px;
-    padding: 8px 0;
-  }
-  &__banner {
-    &__contents {
-      width: 750px;
-      height: 260px;
-      margin: 0 auto;
-
-      h2 {
-        font-size: 24px;
-        padding-top: 40px;
-      }
-      h1 {
-        font-size: 35px;
-        margin-bottom: 20px;
-      }
-    }
-    #bg {
-      background-color: gray;
-      position: relative;
-    }
-  }
-  &__lists {
-    width: 1020px;
-    display: flex;
-    margin: 18px auto 0;
-    &__about {
-      width: 240px;
-      padding-right: 40px;
-      .logo-TWFB {
+      &__process{
+        width: 600px;
+        height: 100px;
+        margin-top: 5px;
+        padding-left: 20px;
         display: flex;
-        li {
-          margin: 30px 30px 0 0;
+        li{
+          display: inline-block;
+          padding-left: 10px;
+          margin-left: 30px;
+          list-style: none;
+
         }
       }
     }
-    &__helps {
-      width: 240px;
-      padding-right: 40px;
+    &__content{
+      width: 100%;
+      height: 500px;
+      background-color: yellowgreen;
     }
-    &__privacy {
-      &__flexbox {
-        display: flex;
-        ul {
-          width: 240px;
-          padding-right: 10px;
-        }
-      }
-    }
-    &__country {
-      width: 85px;
-      padding-right: 40px;
-    }
-  }
-  &__bottom {
-    width: 1020px;
-    margin: 30px auto 0;
-    display: flex;
-    &__logo {
-      float: left;
-      width: 125px;
-    }
-    &__copyright {
-      &__copyright {
-        width: 770px;
-        text-align: center;
-        font-size: 8px;
-        padding-bottom: 30px;
-      }
+    &__footer{
+      width: 100%;
+      height: 300px;
+      background-color: blue;
     }
   }
 }
-
-

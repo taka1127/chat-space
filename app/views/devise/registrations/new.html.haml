@@ -1,365 +1,384 @@
-.header
-  .header__search-bar
-    .header__search-bar__logo
-      -# = link_to root_path do
-      = image_tag "fmarket_logo_red.svg"
-    .header__search-bar__form
-      %input{type: "search", name: "keyword", size: "80", placeholder: "何かお探しですか？"}/
-  .header__contents
-    .header__contents__search-tags
-      .header__contents__search-tags__category.tag
-        = link_to '#' do
-          ■カテゴリーから探す
-      .header__contents__search-tags__brand.tag
-        = link_to '#' do
-          ■ブランドから探す
-    .header__contents__utilities
-      %ul
-        %li.header__contents__utilities__likes
-          = link_to '#' do
-            ■いいね！一覧
-        %li.header__contents__utilities__notice
-          = link_to '#' do
-            ■お知らせ
-        %li.header__contents__utilities__todo
-          = link_to '#' do
-            ■やることリスト
-        %li.header__contents__utilities__mypage
-          = link_to '#' do
-            ■マイページ
--#-----------ここまでヘッダー------------------------------
+-# .header
+-#   .header__search-bar
+-#     .header__search-bar__logo
+-#       -# = link_to root_path do
+-#       = image_tag "fmarket_logo_red.svg"
+-#     .header__search-bar__form
+-#       %input{type: "search", name: "keyword", size: "80", placeholder: "何かお探しですか？"}/
+-#   .header__contents
+-#     .header__contents__search-tags
+-#       .header__contents__search-tags__category.tag
+-#         = link_to '#' do
+-#           ■カテゴリーから探す
+-#       .header__contents__search-tags__brand.tag
+-#         = link_to '#' do
+-#           ■ブランドから探す
+-#     .header__contents__utilities
+-#       %ul
+-#         %li.header__contents__utilities__likes
+-#           = link_to '#' do
+-#             ■いいね！一覧
+-#         %li.header__contents__utilities__notice
+-#           = link_to '#' do
+-#             ■お知らせ
+-#         %li.header__contents__utilities__todo
+-#           = link_to '#' do
+-#             ■やることリスト
+-#         %li.header__contents__utilities__mypage
+-#           = link_to '#' do
+-#             ■マイページ
+-# -#-----------ここまでヘッダー------------------------------
 
--#-----------支払い方法ページ----------------------------
+-# -#-----------支払い方法ページ----------------------------
+-# -# .main
+-# -#   .main__container
+-# -#     .main__container__right
+-# -#       .main__container__right__payment
+-# -#         支払い方法
+-# -#       .main__container__right__bottom
+-# -#         .main__container__right__bottom__section
+-# -#           クレジットカード一覧
+-# -#         .main__container__right__bottom__card
+-# -#           %i.far.fa-credit-card
+-# -#           = link_to '#', class:'card' do
+-# -#             クレジットカードを追加する
+-# -#         .main__container__right__bottom__info
+-# -#           = link_to '#', class:'info' do
+-# -#             支払い方法について
+-# -#             %i.fas.fa-chevron-right
+
+-# -#-----------ログアウトページ----------------------------
+-# -# .main
+-# -#   .main__container
+-# -#     .main__container__l-container
+-# -#       .main__container__l-container__btn
+-# -#         =link_to '#', class:'logout' do
+-# -#           ログアウト
+
+-# -#-----------プロフィールページ----------------------------
+-# -# .main
+-# -#   .main__container
+-# -#     .main__container__p-container
+-# -#       .main__container__p-container__header
+-# -#         プロフィール
+-# -#       .main__container__p-container__profile
+-# -#         .main__container__p-container__profile__i-erea
+-# -#           .main__container__p-container__profile__i-erea__content
+-# -#             .main__container__p-container__profile__i-erea__content__icon
+-# -#             .main__container__p-container__profile__i-erea__content__name
+-# -#               name
+-# -#         .main__container__p-container__profile__text
+-# -#           %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
+-# -#         .main__container__p-container__profile__btn
+-# -#           =link_to '#', class:'change' do
+-# -#             変更する
+-# -#-----------本人確認ページ----------------------------
 -# .main
 -#   .main__container
--#     .main__container__right
--#       .main__container__right__payment
--#         支払い方法
--#       .main__container__right__bottom
--#         .main__container__right__bottom__section
--#           クレジットカード一覧
--#         .main__container__right__bottom__card
--#           %i.far.fa-credit-card
--#           = link_to '#', class:'card' do
--#             クレジットカードを追加する
--#         .main__container__right__bottom__info
--#           = link_to '#', class:'info' do
--#             支払い方法について
+-#     .main__container__r-container
+-#       .main__container__r-container__header
+-#         本人情報の登録
+-#       .main__container__r-container__register
+-#         .main__container__r-container__register__upload
+-#           %p お客さまの本人情報をご登録ください。
+-#           %p 登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
+-#           = link_to "#", class:"verification" do
+-#             本人確認書類のアッロードについて
 -#             %i.fas.fa-chevron-right
 
--#-----------ログアウトページ----------------------------
--# .main
--#   .main__container
--#     .main__container__l-container
--#       .main__container__l-container__btn
--#         =link_to '#', class:'logout' do
--#           ログアウト
+-#         .main__container__r-container__register__form
+-#           お名前
+-#         .main__container__r-container__register__info
+-#           山田　太郎
+-#         .main__container__r-container__register__form
+-#           お名前カナ
+-#         .main__container__r-container__register__info
+-#           ヤマダ　タロウ
+-#         .main__container__r-container__register__form
+-#           生年月日
+-#         .main__container__r-container__register__info
+-#           2000/01/01
+-#         .main__container__r-container__register__form
+-#           .main__container__r-container__register__form__place
+-#             郵便番号
+-#           .main__container__r-container__register__form__any
+-#             任意
+-#         .main__container__r-container__register__form__edit
+-#           %input{type: "text", name: "place", size: "50", class:"person"}
+-#         .main__container__r-container__register__form
+-#           .main__container__r-container__register__form__place
+-#             都道府県
+-#           .main__container__r-container__register__form__any
+-#             任意
+-#         .main__container__r-container__register__form__p-edit
+-#           %rabel{name:"p-rabel",class:"label"}
+-#             %select{name:"prefectures",class:"prefectures"}
+-#               %option{value:"1"} 北海道
+-#               %option{value:"2"} 青森県
+-#               %option{value:"3"} 岩手県
+-#               %option{value:"4"} 宮城県
+-#               %option{value:"5"} 秋田県
+-#               %option{value:"6"} 山形県
+-#               %option{value:"7"} 福島県
+-#               %option{value:"8"} 東京都
+-#               %option{value:"9"} 神奈川県
+-#               %option{value:"10"} 埼玉県
+-#               %option{value:"11"} 千葉県
+-#               %option{value:"12"} 茨城県
+-#               %option{value:"13"} 栃木県
+-#               %option{value:"14"} 群馬県
+-#               %option{value:"15"} 山梨県
+-#               %option{value:"16"} 新潟県
+-#               %option{value:"17"} 長野県
+-#               %option{value:"18"} 富山県
+-#               %option{value:"19"} 石川県
+-#               %option{value:"20"} 福井県
+-#               %option{value:"21"} 愛知県
+-#               %option{value:"22"} 岐阜県
+-#               %option{value:"23"} 静岡県
+-#               %option{value:"24"} 三重県
+-#               %option{value:"25"} 大阪府
+-#               %option{value:"26"} 兵庫県
+-#               %option{value:"27"} 京都府
+-#               %option{value:"28"} 滋賀県
+-#               %option{value:"29"} 奈良県
+-#               %option{value:"30"} 和歌山県
+-#               %option{value:"31"} 鳥取県
+-#               %option{value:"32"} 島根県
+-#               %option{value:"33"} 岡山県
+-#               %option{value:"34"} 広島県
+-#               %option{value:"35"} 山口県
+-#               %option{value:"36"} 徳島県
+-#               %option{value:"37"} 香川県
+-#               %option{value:"38"} 愛媛県
+-#               %option{value:"39"} 高知県
+-#               %option{value:"40"} 福岡県
+-#               %option{value:"41"} 佐賀県
+-#               %option{value:"42"} 長崎県
+-#               %option{value:"43"} 熊本県
+-#               %option{value:"44"} 大分県
+-#               %option{value:"45"} 宮城県
+-#               %option{value:"46"} 鹿児島県
+-#               %option{value:"47"} 沖縄県
+-#             %i.fas.fa-chevron-down
+-#         .main__container__r-container__register__form
+-#           .main__container__r-container__register__form__place
+-#             市町村
+-#           .main__container__r-container__register__form__any
+-#             任意
+-#         .main__container__r-container__register__form__edit
+-#           %input{type: "text", name: "place", size: "50", class:"person"}
+-#         .main__container__r-container__register__form
+-#           .main__container__r-container__register__form__place
+-#             番地
+-#           .main__container__r-container__register__form__any
+-#             任意
+-#         .main__container__r-container__register__form__edit
+-#           %input{type: "text", name: "place", size: "50", class:"person"}
+-#         .main__container__r-container__register__form
+-#           .main__container__r-container__register__form__place
+-#             建物名
+-#           .main__container__r-container__register__form__any
+-#             任意
+-#         .main__container__r-container__register__form__edit
+-#           %input{type: "text", name: "place", size: "50", class:"person"}
+-#       .main__container__r-container__register__btn
+-#         =link_to '#', class:'register' do
+-#           登録する
+-#       .main__container__r-container__register__r-info
+-#         = link_to "#", class:"register-info" do
+-#           本人情報の登録について
+-#           %i.fas.fa-chevron-right
 
--#-----------プロフィールページ----------------------------
--# .main
--#   .main__container
--#     .main__container__p-container
--#       .main__container__p-container__header
--#         プロフィール
--#       .main__container__p-container__profile
--#         .main__container__p-container__profile__i-erea
--#           .main__container__p-container__profile__i-erea__content
--#             .main__container__p-container__profile__i-erea__content__icon
--#             .main__container__p-container__profile__i-erea__content__name
--#               name
--#         .main__container__p-container__profile__text
--#           %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
--#         .main__container__p-container__profile__btn
--#           =link_to '#', class:'change' do
--#             変更する
--#-----------本人確認ページ----------------------------
-.main
-  .main__container
-    .main__container__r-container
-      .main__container__r-container__header
-        本人情報の登録
-      .main__container__r-container__register
-        .main__container__r-container__register__upload
-          %p お客さまの本人情報をご登録ください。
-          %p 登録されたお名前・生年月日を変更する場合、本人確認書類の提出が必要になります。
-          = link_to "#", class:"verification" do
-            本人確認書類のアッロードについて
-            %i.fas.fa-chevron-right
-
-        .main__container__r-container__register__form
-          お名前
-        .main__container__r-container__register__info
-          山田　太郎
-        .main__container__r-container__register__form
-          お名前カナ
-        .main__container__r-container__register__info
-          ヤマダ　タロウ
-        .main__container__r-container__register__form
-          生年月日
-        .main__container__r-container__register__info
-          2000/01/01
-        .main__container__r-container__register__form
-          .main__container__r-container__register__form__place
-            郵便番号
-          .main__container__r-container__register__form__any
-            任意
-        .main__container__r-container__register__form__edit
-          %input{type: "text", name: "place", size: "50", class:"person"}
-        .main__container__r-container__register__form
-          .main__container__r-container__register__form__place
-            都道府県
-          .main__container__r-container__register__form__any
-            任意
-        .main__container__r-container__register__form__p-edit
-          %rabel{name:"p-rabel",class:"label"}
-            %select{name:"prefectures",class:"prefectures"}
-              %option{value:"1"} 北海道
-              %option{value:"2"} 青森県
-              %option{value:"3"} 岩手県
-              %option{value:"4"} 宮城県
-              %option{value:"5"} 秋田県
-              %option{value:"6"} 山形県
-              %option{value:"7"} 福島県
-              %option{value:"8"} 東京都
-              %option{value:"9"} 神奈川県
-              %option{value:"10"} 埼玉県
-              %option{value:"11"} 千葉県
-              %option{value:"12"} 茨城県
-              %option{value:"13"} 栃木県
-              %option{value:"14"} 群馬県
-              %option{value:"15"} 山梨県
-              %option{value:"16"} 新潟県
-              %option{value:"17"} 長野県
-              %option{value:"18"} 富山県
-              %option{value:"19"} 石川県
-              %option{value:"20"} 福井県
-              %option{value:"21"} 愛知県
-              %option{value:"22"} 岐阜県
-              %option{value:"23"} 静岡県
-              %option{value:"24"} 三重県
-              %option{value:"25"} 大阪府
-              %option{value:"26"} 兵庫県
-              %option{value:"27"} 京都府
-              %option{value:"28"} 滋賀県
-              %option{value:"29"} 奈良県
-              %option{value:"30"} 和歌山県
-              %option{value:"31"} 鳥取県
-              %option{value:"32"} 島根県
-              %option{value:"33"} 岡山県
-              %option{value:"34"} 広島県
-              %option{value:"35"} 山口県
-              %option{value:"36"} 徳島県
-              %option{value:"37"} 香川県
-              %option{value:"38"} 愛媛県
-              %option{value:"39"} 高知県
-              %option{value:"40"} 福岡県
-              %option{value:"41"} 佐賀県
-              %option{value:"42"} 長崎県
-              %option{value:"43"} 熊本県
-              %option{value:"44"} 大分県
-              %option{value:"45"} 宮城県
-              %option{value:"46"} 鹿児島県
-              %option{value:"47"} 沖縄県
-            %i.fas.fa-chevron-down
-        .main__container__r-container__register__form
-          .main__container__r-container__register__form__place
-            市町村
-          .main__container__r-container__register__form__any
-            任意
-        .main__container__r-container__register__form__edit
-          %input{type: "text", name: "place", size: "50", class:"person"}
-        .main__container__r-container__register__form
-          .main__container__r-container__register__form__place
-            番地
-          .main__container__r-container__register__form__any
-            任意
-        .main__container__r-container__register__form__edit
-          %input{type: "text", name: "place", size: "50", class:"person"}
-        .main__container__r-container__register__form
-          .main__container__r-container__register__form__place
-            建物名
-          .main__container__r-container__register__form__any
-            任意
-        .main__container__r-container__register__form__edit
-          %input{type: "text", name: "place", size: "50", class:"person"}
-      .main__container__r-container__register__btn
-        =link_to '#', class:'register' do
-          登録する
-      .main__container__r-container__register__r-info
-        = link_to "#", class:"register-info" do
-          本人情報の登録について
-          %i.fas.fa-chevron-right
-
-        -# .main__container__r-container__register__text
-        -#   %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
-        -# .main__container__r-container__register__btn
-        -#   =link_to '#', class:'change' do
-        -#     変更する
+-#         -# .main__container__r-container__register__text
+-#         -#   %textarea{ type: "text",rows: "5", placeholder: "こんにちは☆ ご覧いただきありがとうございます！かわいいものやきれいめオフィスカジュアル中心に出品しています。服のサイズは主に9号です。気持ちよくお取引できるよう心がけていますので、商品や発送方法などご質問がありましたらお気軽にどうぞ♪",id:"profile"}
+-#         -# .main__container__r-container__register__btn
+-#         -#   =link_to '#', class:'change' do
+-#         -#     変更する
 
   
 
-    -#------左のサイドバーーーーーー---------
-    .main__container__side
-      .main__container__side__nav
-        %ul
-          %li.main__container__side__nav__mypage
-            = link_to '#', class:'list' do
-              マイページ
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__info
-            = link_to '#', class:'list' do
-              お知らせ
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__todo
-            = link_to '#', class:'list' do
-              やることリスト
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__good
-            = link_to '#', class:'list' do
-              いいね！一覧
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__sell
-            = link_to '#', class:'list' do
-              出品する
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__exhibiting
-            = link_to '#', class:'list' do
-              出品した商品-出品中
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__trading
-            = link_to '#', class:'list'do
-              出品した商品-取引中
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__sold
-            = link_to '#', class:'list' do
-              出品した商品-売却済み
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__purchased
-            = link_to '#', class:'list' do
-              購入した商品-取引中
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__transaction
-            = link_to '#', class:'list' do
-              購入した商品-過去の取引
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__news
-            = link_to '#', class:'list' do
-              ニュース一覧
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__evaluation
-            = link_to '#', class:'list' do
-              評価一覧
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__guide
-            = link_to '#', class:'list' do
-              ガイド
-            %i.fas.fa-chevron-right
-          %li.main__container__side__nav__list__contact
-            = link_to '#', class:'list' do
-              お問い合わせ
-            %i.fas.fa-chevron-right
-          .main__container__side__nav__header
-            %h3メルペイ
-            %ul
-              %li.main__container__side__nav__list__balance
-                = link_to '#', class:'list' do
-                  残高・振込申請
-                %i.fas.fa-chevron-right
-              %li.main__container__side__nav__list__point
-                = link_to '#', class:'list' do
-                  ポイント
-                %i.fas.fa-chevron-right
-        .main__container__side__nav__header
-          %h3設定
-          %ul
-            %li.main__container__side__nav__list__profile
-              = link_to '#', class:'list' do
-                プロフィール
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__change-of-address
-              = link_to '#', class:'list' do
-                発送元・お届け先住所変更
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__payment
-              = link_to '#', class:'list' do
-                支払い方法
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__mail
-              = link_to '#', class:'list' do
-                メール/パスワード
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__identity
-              = link_to '#', class:'list' do
-                本人情報
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__tell
-              = link_to '#', class:'list' do
-                電話番号の確認
-              %i.fas.fa-chevron-right
-            %li.main__container__side__nav__list__logout
-              = link_to '#', class:'list' do
-                ログアウト
-              %i.fas.fa-chevron-right
--#----------フッター-------------------------------
-.footer
-  .footer__banner
-    .footer__banner__bg
-    .footer__banner__contents
-      %p スマホでかんたんフリマアプリ
-      %p 今すぐ無料ダウンロード
-      .footer__banner__contents__banner-icons
-        .footer__banner__contents__banner-icons__mercari
-        .footer__banner__contents__banner-icons__stores
-          .footer__banner__contents__banner-icons__stores__app
-          .footer__banner__contents__banner-icons__stores__google
-    .footer__banner__figure
-  .footer__lists
-    .footer__lists__about
-      .footer__lists__about__head
-        メルカリについて
-      %ul
-        %li 会社概要（運営会社）
-        %li 採用情報
-        %li プレスリリース
-        %li 公式ブログ
-        %li メルカリロゴ利用ガイドライン
-        %li （ツイッター）
-        %li （フェイスブック）
+-#     -#------左のサイドバーーーーーー---------
+-#     .main__container__side
+-#       .main__container__side__nav
+-#         %ul
+-#           %li.main__container__side__nav__mypage
+-#             = link_to '#', class:'list' do
+-#               マイページ
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__info
+-#             = link_to '#', class:'list' do
+-#               お知らせ
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__todo
+-#             = link_to '#', class:'list' do
+-#               やることリスト
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__good
+-#             = link_to '#', class:'list' do
+-#               いいね！一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__sell
+-#             = link_to '#', class:'list' do
+-#               出品する
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__exhibiting
+-#             = link_to '#', class:'list' do
+-#               出品した商品-出品中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__trading
+-#             = link_to '#', class:'list'do
+-#               出品した商品-取引中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__sold
+-#             = link_to '#', class:'list' do
+-#               出品した商品-売却済み
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__purchased
+-#             = link_to '#', class:'list' do
+-#               購入した商品-取引中
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__transaction
+-#             = link_to '#', class:'list' do
+-#               購入した商品-過去の取引
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__news
+-#             = link_to '#', class:'list' do
+-#               ニュース一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__evaluation
+-#             = link_to '#', class:'list' do
+-#               評価一覧
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__guide
+-#             = link_to '#', class:'list' do
+-#               ガイド
+-#             %i.fas.fa-chevron-right
+-#           %li.main__container__side__nav__list__contact
+-#             = link_to '#', class:'list' do
+-#               お問い合わせ
+-#             %i.fas.fa-chevron-right
+-#           .main__container__side__nav__header
+-#             %h3メルペイ
+-#             %ul
+-#               %li.main__container__side__nav__list__balance
+-#                 = link_to '#', class:'list' do
+-#                   残高・振込申請
+-#                 %i.fas.fa-chevron-right
+-#               %li.main__container__side__nav__list__point
+-#                 = link_to '#', class:'list' do
+-#                   ポイント
+-#                 %i.fas.fa-chevron-right
+-#         .main__container__side__nav__header
+-#           %h3設定
+-#           %ul
+-#             %li.main__container__side__nav__list__profile
+-#               = link_to '#', class:'list' do
+-#                 プロフィール
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__change-of-address
+-#               = link_to '#', class:'list' do
+-#                 発送元・お届け先住所変更
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__payment
+-#               = link_to '#', class:'list' do
+-#                 支払い方法
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__mail
+-#               = link_to '#', class:'list' do
+-#                 メール/パスワード
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__identity
+-#               = link_to '#', class:'list' do
+-#                 本人情報
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__tell
+-#               = link_to '#', class:'list' do
+-#                 電話番号の確認
+-#               %i.fas.fa-chevron-right
+-#             %li.main__container__side__nav__list__logout
+-#               = link_to '#', class:'list' do
+-#                 ログアウト
+-#               %i.fas.fa-chevron-right
+-# -#----------フッター-------------------------------
+-# .footer
+-#   .footer__banner
+-#     .footer__banner__bg
+-#     .footer__banner__contents
+-#       %p スマホでかんたんフリマアプリ
+-#       %p 今すぐ無料ダウンロード
+-#       .footer__banner__contents__banner-icons
+-#         .footer__banner__contents__banner-icons__mercari
+-#         .footer__banner__contents__banner-icons__stores
+-#           .footer__banner__contents__banner-icons__stores__app
+-#           .footer__banner__contents__banner-icons__stores__google
+-#     .footer__banner__figure
+-#   .footer__lists
+-#     .footer__lists__about
+-#       .footer__lists__about__head
+-#         メルカリについて
+-#       %ul
+-#         %li 会社概要（運営会社）
+-#         %li 採用情報
+-#         %li プレスリリース
+-#         %li 公式ブログ
+-#         %li メルカリロゴ利用ガイドライン
+-#         %li （ツイッター）
+-#         %li （フェイスブック）
 
-    .footer__lists__helps
-      .footer__lists__helps__head
-        ヘルプ＆ガイド
-      %ul
-        %li メルカリガイド
-        %li らくらくメルカリ便
-        %li ゆうゆうメルカリ便
-        %li 大型メルカリ便
-        %li 車体取引ガイド
-        %li メルカリあんしん・あんぜん宣言！
-        %li 偽ブランド品撲滅への取り組み
-        %li メルカリボックス
+-#     .footer__lists__helps
+-#       .footer__lists__helps__head
+-#         ヘルプ＆ガイド
+-#       %ul
+-#         %li メルカリガイド
+-#         %li らくらくメルカリ便
+-#         %li ゆうゆうメルカリ便
+-#         %li 大型メルカリ便
+-#         %li 車体取引ガイド
+-#         %li メルカリあんしん・あんぜん宣言！
+-#         %li 偽ブランド品撲滅への取り組み
+-#         %li メルカリボックス
 
-    .footer__lists__privacy
-      .footer__lists__privacy__head
-        プライバシーと利用規約
-      .footer__lists__privacy__flexbox
-        %ul
-          %li プライバシーポリシー
-          %li メルカリ利用規約
-          %li あんしんスマホサポート制度に関する利用特約
-          %li コンプライアンスポリシー
-        %ul
-          %li 個人データの安全管理に係る基本方針
-          %li 特定商取引に関する表記
-          %li 資金決済法に基づく表示
-          %li 法令遵守法令遵守と犯罪防止のために
-    .footer__lists__country
-      .footer__lists__country__head
-        国
-      %ul
-        %li 日本
-        %li United States
+-#     .footer__lists__privacy
+-#       .footer__lists__privacy__head
+-#         プライバシーと利用規約
+-#       .footer__lists__privacy__flexbox
+-#         %ul
+-#           %li プライバシーポリシー
+-#           %li メルカリ利用規約
+-#           %li あんしんスマホサポート制度に関する利用特約
+-#           %li コンプライアンスポリシー
+-#         %ul
+-#           %li 個人データの安全管理に係る基本方針
+-#           %li 特定商取引に関する表記
+-#           %li 資金決済法に基づく表示
+-#           %li 法令遵守法令遵守と犯罪防止のために
+-#     .footer__lists__country
+-#       .footer__lists__country__head
+-#         国
+-#       %ul
+-#         %li 日本
+-#         %li United States
   
-  .footer__bottom
-    .footer__copyright__logo
-    .footer__copyright__copyright
+-#   .footer__bottom
+-#     .footer__copyright__logo
+-#     .footer__copyright__copyright
+
+-#-----電話番号確認ページ--------------------------
+
+.p-main
+  .p-main__container
+    .p-main__container__header
+      .p-main__container__header__logo
+        =image_tag "fmarket_logo_red.svg"
+      .p-main__container__header__process
+        %li 会員情報
+        %li 電話番号認証
+        %li 住所登録
+        %li 支払い方法
+        %li 完了
+
+    .p-main__container__content
+    .p-main__container__footer
+
+
