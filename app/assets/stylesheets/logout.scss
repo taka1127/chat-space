@@ -473,143 +473,6 @@
 //   }
 // }
 //-----電話番号確認ページ--------------------------
-// *{
-//   box-sizing: border-box;
-// }
-// .p-main{
-//   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-//   &__container{
-//     width: 800px;
-//     height: 1000px;
-//     margin: 0 auto;
-//     padding: 30px;
-//     background-color: #f5f5f5;
-//     &__header{
-//       width: 100%;
-//       height: 150px;
-//       display: flex;
-//       justify-content: space-between;
-//       line-height: 130px;
-//       &__logo{
-//         width: 200px;
-//         height: 100px;
-//         margin: 30px 0 20px 20px;
-//       }
-//       &__process{
-//         width: 600px;
-//         height: 100px;
-//         margin-top: 5px;
-//         padding-left: 20px;
-//         display: flex;
-//         &__info{
-//           display: block;
-//           padding-left: 10px;
-//           margin-left: 30px;
-//           font-size: 12px;
-//         }
-//       }
-//     }
-//     &__content{
-//       width: 100%;
-//       height: 500px;
-//       background-color: white;
-//       &__header{
-//         width: 100%;
-//         height: 70px;
-//         padding: 8px 28px;
-//         margin: 0 auto;
-//         font-size: 24px;
-//         text-align: center;
-//         border-bottom: 1px solid #c8c2c2;
-//       }
-//       &__tell{
-//         padding: 0 200px;
-//         margin-top: 70px;
-//         .tell-number{
-//           display: block;
-//           width: 300px;
-//           height: 40px;
-//           padding: 10px 16px 8px;
-//           margin-top: 10px;
-//           border-radius: 3px;
-//           background-color: white;
-//           border: 1px solid gray;
-//         }
-//       }
-//       &__info{
-//         padding: 0 190px;
-//         margin-top: 10px;
-//       }
-//       &__btn{
-//         padding: 0 200px;
-//         .sms{
-//           display: block;
-//           text-align: center;
-//           line-height: 50px;
-//           text-decoration: none;
-//           font-size: 13px;
-//           color: white;
-//           background-color:#ea352d;
-//           border: 1px solid #ea352d;
-//           margin-top: 50px;
-//           &:hover{
-//             background-color: rgb(214, 22, 22);
-//             transition:all 0.3s;
-//           }
-//         }
-//       }
-//       &__note{
-//         padding: 0 200px;
-//         margin-top: 20px;
-//       }
-//       &__reason{
-//         padding: 0 200px;
-//         text-align: right;
-//         .register-info{
-//           text-decoration: none;
-//           color: rgb(48, 153, 214);
-//           font-size: 15px;
-//         }
-//         .fas.fa-chevron-right{
-//           color: rgb(48, 153, 214);
-//           font-size: 15px;
-//         }
-//       }
-//     }
-//     &__footer{
-//       width: 100%;
-//       height: 300px;
-//       &__info{
-//         width: 400px;
-//         height: 100px;
-//         font-size: 10px;
-//         display: flex;
-//         margin: 0 auto;
-//         &__rule{
-//           .notation{
-//             display: block;
-//             height: 50px;
-//             text-decoration: none;
-//             color: rgba(128, 128, 128, 0.8);
-//             margin: 50px 20px;
-//           }
-//         }
-//       }
-//       &__logo{
-//         margin: 0 auto;
-//         width: 100px;
-//         height: 100px;
-//       }
-//       &__copyright{
-//         margin: 0 auto;
-//         font-size: 10px;
-//         text-align: center;
-//       }
-//     }
-//   }
-// }
-
-//-----会員登録完了ページ--------
 *{
   box-sizing: border-box;
 }
@@ -617,9 +480,9 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   &__container{
     width: 800px;
-    height: 1300px;
+    // height: 1000px;
     margin: 0 auto;
-    padding: 30px 30px 0 30px;
+    padding: 30px;
     background-color: #f5f5f5;
     &__header{
       width: 100%;
@@ -659,21 +522,27 @@
         text-align: center;
         border-bottom: 1px solid #c8c2c2;
       }
-      &__done{
+      &__tell{
         padding: 0 200px;
         margin-top: 70px;
-        &__content{
-          text-align: center;
-          margin: 0 auto;
-          li{
-            list-style: none;
-            font-size: 20px;
-          }
+        .tell-number{
+          display: block;
+          width: 300px;
+          height: 40px;
+          padding: 10px 16px 8px;
+          margin-top: 10px;
+          border-radius: 3px;
+          background-color: white;
+          border: 1px solid gray;
         }
+      }
+      &__info{
+        padding: 0 190px;
+        margin-top: 10px;
       }
       &__btn{
         padding: 0 200px;
-        .start{
+        .sms{
           display: block;
           text-align: center;
           line-height: 50px;
@@ -687,6 +556,23 @@
             background-color: rgb(214, 22, 22);
             transition:all 0.3s;
           }
+        }
+      }
+      &__note{
+        padding: 0 200px;
+        margin-top: 20px;
+      }
+      &__reason{
+        padding: 0 200px;
+        text-align: right;
+        .register-info{
+          text-decoration: none;
+          color: rgb(48, 153, 214);
+          font-size: 15px;
+        }
+        .fas.fa-chevron-right{
+          color: rgb(48, 153, 214);
+          font-size: 15px;
         }
       }
     }
@@ -722,3 +608,116 @@
     }
   }
 }
+
+//-----会員登録完了ページ--------
+// *{
+//   box-sizing: border-box;
+// }
+// .p-main{
+//   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//   &__container{
+//     width: 800px;
+//     margin: 0 auto;
+//     padding: 30px 30px 0 30px;
+//     background-color: #f5f5f5;
+//     &__header{
+//       width: 100%;
+//       height: 150px;
+//       display: flex;
+//       justify-content: space-between;
+//       line-height: 130px;
+//       &__logo{
+//         width: 200px;
+//         height: 100px;
+//         margin: 30px 0 20px 20px;
+//       }
+//       &__process{
+//         width: 600px;
+//         height: 100px;
+//         margin-top: 5px;
+//         padding-left: 20px;
+//         display: flex;
+//         &__info{
+//           display: block;
+//           padding-left: 10px;
+//           margin-left: 30px;
+//           font-size: 12px;
+//         }
+//       }
+//     }
+//     &__content{
+//       width: 100%;
+//       height: 500px;
+//       background-color: white;
+//       &__header{
+//         width: 100%;
+//         height: 70px;
+//         padding: 8px 28px;
+//         margin: 0 auto;
+//         font-size: 24px;
+//         text-align: center;
+//         border-bottom: 1px solid #c8c2c2;
+//       }
+//       &__done{
+//         padding: 0 200px;
+//         margin-top: 70px;
+//         &__content{
+//           text-align: center;
+//           margin: 0 auto;
+//           li{
+//             list-style: none;
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//       &__btn{
+//         padding: 0 200px;
+//         .start{
+//           display: block;
+//           text-align: center;
+//           line-height: 50px;
+//           text-decoration: none;
+//           font-size: 13px;
+//           color: white;
+//           background-color:#ea352d;
+//           border: 1px solid #ea352d;
+//           margin-top: 50px;
+//           &:hover{
+//             background-color: rgb(214, 22, 22);
+//             transition:all 0.3s;
+//           }
+//         }
+//       }
+//     }
+//     &__footer{
+//       width: 100%;
+//       height: 300px;
+//       &__info{
+//         width: 400px;
+//         height: 100px;
+//         font-size: 10px;
+//         display: flex;
+//         margin: 0 auto;
+//         &__rule{
+//           .notation{
+//             display: block;
+//             height: 50px;
+//             text-decoration: none;
+//             color: rgba(128, 128, 128, 0.8);
+//             margin: 50px 20px;
+//           }
+//         }
+//       }
+//       &__logo{
+//         margin: 0 auto;
+//         width: 100px;
+//         height: 100px;
+//       }
+//       &__copyright{
+//         margin: 0 auto;
+//         font-size: 10px;
+//         text-align: center;
+//       }
+//     }
+//   }
+// }
